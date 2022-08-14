@@ -8,7 +8,7 @@ html
 }
 
 body {
-	
+
 }
 
 header, nav, main
@@ -171,7 +171,7 @@ main
 
 .flip-clock-wrapper
 {
-	width: 300px !important;
+	width: 500px !important;
 	margin: auto !important;
 }
 
@@ -256,7 +256,7 @@ main
 	{
 		display: none;
 	}
-	
+
 	.badges .trophy
 	{
 		float: right;

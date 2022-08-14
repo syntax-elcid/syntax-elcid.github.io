@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+	var url = "https://www.googleapis.com/auth/spreadsheets/list/" + spreadsheetID + "/od6/public/values?alt=json";
 
 	var badges = "";
 	var tinyBadges = "";
@@ -15,10 +15,10 @@ $(document).ready(function()
 
 	var clock;
 	var currentDate = new Date();
-	var futureDate  = new Date(2022, 7, 16, 12, 00);
+	var futureDate  = new Date("2022-08-13T00:00");
 	if (currentDate<futureDate)
 	{
-		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+		var diff = (futureDate.getTime()  - currentDate.getTime())/1000 ;
 	}
 	else
 	{
@@ -113,7 +113,7 @@ $(document).ready(function()
 
 	clock = $('.clock').FlipClock(diff,
 	{
-		clockFace: 'MinuteCounter',
+		clockFace: 'HourCounter',
 		countdown: true,
 		language: 'nl-be'
 	});
