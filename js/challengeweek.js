@@ -15,7 +15,7 @@ $(document).ready(function()
 
 	var clock;
 	var currentDate = new Date();
-	var futureDate  = new Date("2022-08-13T00:00");
+	var futureDate  = new Date("2022-08-16T12:00");
 	if (currentDate<futureDate)
 	{
 		var diff = (futureDate.getTime()  - currentDate.getTime())/1000 ;
